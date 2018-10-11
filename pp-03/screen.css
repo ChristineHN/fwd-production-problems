@@ -36,7 +36,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #one {
   display: flex;
   height: 10vw;
-  width: 10vw;
+  width: 100vw;
 }
 
 #three{
@@ -60,6 +60,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   #three,
   #two,
   #one {
+
   }
 
   #three{
