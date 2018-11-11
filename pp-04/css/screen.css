@@ -19,10 +19,10 @@ body {
 }
 
 /* mouse over link */
-#pointer {
+button:hover {
   cursor: pointer;
-
 }
+
 
 /* ===== LAYOUT STYLES ===== */
 
