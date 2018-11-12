@@ -19,7 +19,7 @@ body {
 }
 
 /* mouse over link */
-button:hover {
+#bell:hover {
   cursor: pointer;
 }
 
