@@ -2,15 +2,16 @@
 //  outputs the correct value for x (5) even after double(6) is
 //  called:
 
-var x = 5;
-
 function double(num) {
   x = num * 2;
   return x;
 }
 
 double(6);
+
+var x = 5;
 console.log('The value of x is:', x, 'It should be 5.');
+
 
 //  2. Rewrite the corrected JavaScript above as a self-executing
 //  anonymous function that does not pollute the global
@@ -18,6 +19,13 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  function can be accessed via the `window` global object,
 //  like `window.x`):
 
+(function() {
+	function double(num) {
+		x = num * 2;
+		return x;
+	}
+	console.log("The value of x is ", x, "It should be 5.");
+});
 
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
