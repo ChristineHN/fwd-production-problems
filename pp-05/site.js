@@ -30,11 +30,12 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  the global scope:
 
 function arrayEach(array, func) {
-  for (i = 0; i < array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     func(array[i]);
   }
 }
 arrayEach(['red','green','blue'], console.log);
+var i;
 console.log(i); // should be 'undefined', not 3
 
 //  4. Explain why this function does not modify the global
