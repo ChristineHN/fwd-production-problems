@@ -19,12 +19,13 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  like `window.x`):
 
 (function (){
+  console.log('The value of x is:', x, 'It should be 5.');
   function double(num){
     x = num * 2;
     return x;
   }
-});
-console.log('The value of x is:', x, 'It should be 5.');
+})();
+// console.log('The value of x is:', x, 'It should be 5.');
 
 //  3. Correct this function so that there is no i variable in
 //  the global scope:
